@@ -26,7 +26,7 @@
         width: 100%;
         padding: 10px;
         height: auto;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
       }
       .header-fix{
         z-index: 99;
@@ -523,6 +523,14 @@
       scroll-snap-type: x mandatory; 
       overflow-x: hidden;
     }
+    @media (hover:none){
+        .scrollable-container {
+            display: flex;
+            overflow-x: auto;
+            overflow-y: hidden;
+            scroll-snap-type: x mandatory; 
+        }
+    }
     .card-scroll {
         flex: 0 0 300px;
         scroll-snap-align: start;
@@ -979,7 +987,7 @@
             </div>
         </div>
     </main>
-    <div id="footer" class="container-fluid bg-white py-5 mx-3">
+    <div id="footer" class="container-fluid bg-white py-5">
         <div class="row row-footer">
         <!--HELP-->
         <div class="col container-footer">
@@ -1055,7 +1063,7 @@
         <div class="container-fluid">
         <hr>
         </div>
-        <div class="d-block container-footer-final mx-5">
+        <div class="d-block container-footer-final mx-3">
         <div class="row">
             <div class="col container-footer-language">
             <i class="fa-solid fa-globe"></i>
